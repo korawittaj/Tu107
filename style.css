@@ -1,0 +1,201 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f7f3;
+    color: #234536;
+}
+
+header {
+    background: #287653;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h2 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 650px;
+    margin: 30px auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px #23453612;
+}
+
+.card h1,
+.card h2 {
+    text-align: center;
+}
+
+.card h1 {
+    font-size: 25px;
+}
+
+.card > p {
+    text-align: center;
+    line-height: 1.7;
+    color: #687d71;
+}
+
+.rule {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.rule div {
+    background: #e7f5eb;
+    border-radius: 12px;
+    padding: 15px;
+    width: 100px;
+    text-align: center;
+}
+
+.rule strong {
+    display: block;
+    font-size: 30px;
+    color: #287653;
+}
+
+.rule span {
+    font-size: 13px;
+}
+
+.description {
+    font-size: 14px;
+}
+
+#timer {
+    text-align: center;
+    font-size: 65px;
+    font-weight: bold;
+    color: #287653;
+    margin: 25px 0 5px;
+}
+
+#status {
+    min-height: 25px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+button {
+    border: none;
+    border-radius: 9px;
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+#startBtn,
+#breakBtn {
+    background: #287653;
+    color: white;
+}
+
+#pauseBtn {
+    background: #f5e9cb;
+    color: #765a20;
+}
+
+#resetBtn {
+    background: #e9edf0;
+    color: #45545d;
+}
+
+#breakBtn {
+    display: block;
+    width: 100%;
+}
+
+.count {
+    text-align: center;
+    margin: 20px;
+    color: #287653;
+}
+
+.count span:first-child {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.clear-btn {
+    display: block;
+    margin: auto;
+    background: #f8e6e6;
+    color: #9b4141;
+}
+
+.tips li {
+    padding: 7px 0;
+    line-height: 1.6;
+}
+
+footer {
+    background: #234536;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    main {
+        width: 94%;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    #timer {
+        font-size: 52px;
+    }
+
+    .rule {
+        gap: 8px;
+    }
+
+    .rule div {
+        width: 30%;
+        padding: 12px 5px;
+    }
+
+    .rule strong {
+        font-size: 25px;
+    }
+
+    .buttons button {
+        flex: 1;
+    }
+}

@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyBreak | พักสายตากันเถอะ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>👀 StudyBreak</h2>
+        <p>เรียนได้เต็มที่ อย่าลืมพักสายตา</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h1>ถึงเวลาพักหรือยัง?</h1>
+            <p>ใช้กฎ 20-20-20 เพื่อช่วยเตือนให้พักสายตา</p>
+
+            <div class="rule">
+                <div>
+                    <strong>20</strong>
+                    <span>นาที</span>
+                </div>
+                <div>
+                    <strong>20</strong>
+                    <span>ฟุต</span>
+                </div>
+                <div>
+                    <strong>20</strong>
+                    <span>วินาที</span>
+                </div>
+            </div>
+
+            <p class="description">
+                ทุก ๆ 20 นาที มองสิ่งที่อยู่ห่างออกไปประมาณ 20 ฟุต
+                (ประมาณ 6 เมตร) เป็นเวลาอย่างน้อย 20 วินาที
+            </p>
+
+            <div id="timer">20:00</div>
+            <p id="status">พร้อมเริ่มเรียนแล้วหรือยัง?</p>
+
+            <div class="buttons">
+                <button id="startBtn">▶ เริ่มจับเวลา</button>
+                <button id="pauseBtn">⏸ หยุดชั่วคราว</button>
+                <button id="resetBtn">↻ เริ่มใหม่</button>
+            </div>
+
+            <button id="breakBtn">🌿 เริ่มพักสายตา 20 วินาที</button>
+        </section>
+
+        <section class="card stats">
+            <h2>📊 สถิติการพักวันนี้</h2>
+            <p>จำนวนครั้งที่คุณพักสายตา</p>
+            <div class="count">
+                <span id="breakCount">0</span>
+                <span>ครั้ง</span>
+            </div>
+            <button id="clearBtn" class="clear-btn">ล้างสถิติวันนี้</button>
+        </section>
+
+        <section class="card tips">
+            <h2>💡 เคล็ดลับดูแลสายตา</h2>
+            <ul>
+                <li>ปรับความสว่างหน้าจอให้เหมาะสม</li>
+                <li>กะพริบตาเป็นระยะเพื่อช่วยลดอาการตาแห้ง</li>
+                <li>นั่งห่างจากหน้าจอในระยะที่เหมาะสม</li>
+                <li>ลุกเดินและยืดเส้นระหว่างพักจากการเรียน</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>StudyBreak | TU107 Project</p>
+        <p>ใช้เทคโนโลยีอย่างสมดุล เพื่อสุขภาพที่ดีและมีประโยชน์ 🌱</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
